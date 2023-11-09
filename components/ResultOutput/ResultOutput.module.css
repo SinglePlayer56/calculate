@@ -1,0 +1,22 @@
+.resultWrapper {
+    background-color: #F3F4F6;
+    width: 100%;
+    padding: 4px 8px;
+    overflow: hidden;
+    text-align: right;
+    border-radius: 6px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.result {
+    color: var(--result-color);
+    font-weight: 800;
+    font-size: 36px;
+    /*line-height: 43px;*/
+    /*text-align: center;*/
+    /*height: 60px;*/
+
+}

@@ -4,4 +4,5 @@
     padding: 4px;
     margin-bottom: 12px;
     width: 240px;
+    background-color: var(--white);
 }

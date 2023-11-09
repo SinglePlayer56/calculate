@@ -1,17 +1,23 @@
-import {DragProps} from "@/components/Drag/Drag.props";
-import {useDrag} from "react-dnd";
+import {useDrop} from "react-dnd";
+import {DropProps} from "@/components/Drop/Drop.props";
 
-export const Drag = ({children, className, ...props}: DragProps) => {
-    const [{isDrag}, drag] = useDrag(() => ({
-        type: 'dragCard',
-        item: {children},
+export const Drop = ({children, className, ...props}: DropProps) => {
+    const [{canDrop, isOver}, drop] = useDrop(() => ({
+        accept: 'dragCard',
+        hover: (item, monitor) => {
+
+        },
         collect: (monitor) => ({
-            isDrag: monitor.isDragging()
+            isOver: monitor.isOver(),
+            canDrop: monitor.canDrop()
         })
     }), []);
-
     return (
-        <div {...props} ref={drag} style={{opacity: isDrag ? '0.5' : '1', position: 'relative', zIndex: 5}}>
+        <div {...props}
+             ref={drop}
+             className={className}
+             style={{backgroundColor: canDrop ? '#F0F9FF' : 'white'}}
+        >
             {children}
         </div>
     )

@@ -1,0 +1,9 @@
+.selectMode {
+    width: 243px;
+    border-radius: 6px;
+    padding: 1px;
+    /*height: 38px;*/
+    background-color: var(--select-mode-color);
+    display: grid;
+    grid-template-columns: auto auto;
+}

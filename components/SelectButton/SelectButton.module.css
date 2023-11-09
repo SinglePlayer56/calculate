@@ -1,0 +1,21 @@
+.button {
+    border-radius: 5px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--dark-slate-blue);
+    border: 1px solid rgba(0,0,0,0);
+    cursor: pointer;
+}
+
+.selected {
+    border: 1px solid var(--border-color);
+}
+
+.selected svg {
+    stroke: var(--blue);
+}

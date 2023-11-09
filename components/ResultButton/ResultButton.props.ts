@@ -1,3 +1,3 @@
 import {DetailedHTMLProps, HTMLAttributes} from "react";
 
-export interface ResultProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
+export interface ResultButtonProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
